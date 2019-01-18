@@ -18,41 +18,41 @@ body {
 .white {
 	color: white;
 }
-
+/*------------------------setting for testing grid----------------------*/
 .navBar {
 	background-color: grey;
 	height: 100px;
 }
 
 
- .mainArticles {
+ 	.mainArticles {
 		background-color: yellow;
 	}
-	.big {
+	.big-article {
 		background-color: green;
 	}
-	.small {
+	.small-article {
 		background-color: red;
 	}
 
-	.latestArticles {
+	.height-500px {
 		background-color: grey;
 	}
 
-	.grid-element {
+	.border-black {
 		height: 200px;
 		border: 2px solid black;
 	}
 
-	.latest {
+	.green-background {
 		background-color: green;
 	}
 
-	.orangePart {
+	.black-background {
 		background-color: black
 	}
 
-	.orangeElement {
+	.grey-background {
 		background-color: grey;
 	}
 
@@ -61,12 +61,14 @@ body {
 		background-color: yellow;
 	}
 
-	.category {
+	.red-background {
 		background-color: red;
-		height: 600px;
-		border: 1px solid black;
 	}
 
+	.category {
+		height: 600px
+	}
+/*------------------------setting for testing grid----------------------*/
 
 /*------------------------top section----------------------*/
 @media only screen and (min-width: 1024px) {
@@ -77,7 +79,7 @@ body {
 		grid-template-rows: 1fr 1fr;
 		grid-gap: 5px;
 	}
-	.big {
+	.big-article {
 		grid-column: span 2;
 		grid-row: span 2;
 	}
@@ -88,12 +90,12 @@ body {
 		grid-gap: 10px;
 	}
 
-	.latestArticles {
+	.height-500px {
 		height: 500px;
 		margin-top: 50px; 
 	}
 
-	.orangePart {
+	.height-220px {
 		margin-top: 100px; 
 		height: 220px;
 	}
@@ -109,8 +111,24 @@ body {
 
 
 @media only screen and (min-width: 768px) {
-	
-	
+	 .mainArticles {
+		height: 500px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 5px;
+	}
+	.big-article {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+
+	.grid-auto-small {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+
 	}
 
 .aboveFooter {
