@@ -4,14 +4,11 @@ body {
 	background-color: #fefefe;
 }
 
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
+
 
 .header {
 	width : 100%;
-	padding :20px;
+	padding :1px 0;
 	background: black;
 	/*width: 100%;
 	background-color: black;
@@ -22,12 +19,12 @@ body {
 	color: white;
 }
 /*------------------------setting for testing grid----------------------*/
-.nav-bar {
+nav {
 	/*background-color: grey;
 	height: 100px;*/
 
 	width : 100%;
-	padding : 40px;
+	padding : 5px 0;
 	background: grey
 }
 
@@ -44,7 +41,7 @@ body {
 		background-color: red;
 	}
 
-	.height-500px {
+	.height-450px {
 		background-color: grey;
 		margin-top: 50px;
 	}
@@ -82,12 +79,18 @@ body {
 
 /*------------------------top section----------------------*/
 @media only screen and (min-width: 1024px) {
+	.container {
+	width: 90%;
+	margin: 0 auto;
+}
     .main-articles {
 		height: 450px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-		grid-gap: 5px;
+		grid-row-gap: 1px;
+		grid-column-gap: 7px;
+		margin: 0 10px;
 	}
 	.big-article {
 		grid-column: span 2;
@@ -101,14 +104,14 @@ body {
 		
 	}
 
-	.height-500px {
-		height: 600px;
+	.height-450px {
+		height: 450px;
 		margin-top: 100px; 
 	}
 
 	.height-220px {
 		margin-top: 100px; 
-		height: 300px;
+		height: 220px;
 	}
 
 	.categories-section {
@@ -121,7 +124,15 @@ body {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.hide-when-screen-medium {
+		display: none;
+	}
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
 	 .main-articles {
 		height: 500px;
 		display: grid;
@@ -143,7 +154,7 @@ body {
 	}
     .height-220px {
 		margin-top: 50px; 
-		height: 500px;
+		height: 220px;
 	}
     .grid-auto-small {
 		display: grid;
@@ -155,18 +166,78 @@ body {
 		margin-top: 50px; 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		
+		grid-gap: 5px;
 	}
 
     /*  end zina's work */
 	}
 
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	.hide-when-screen-small {
+		display: none
+	}
+
+	.top-article {
+		height: 200px;
+	}
+
+	.latest-news {
+		height: 90px;
+	}
+
+	.orange-article {
+		margin: 10px;
+	}
+
+	.list {
+		font-size: 0.8em
+	}
+}
+
+
+/*-------------------end of media queries-----------------*/
+
+.list {
+	display: flex;
+	list-style: none;
+}
+
+.list li {
+	margin-left: 20px; 
+}
+/*
+.big-article {
+	display: flex;
+	align-content: space-between;
+	flex-direction: column;
+}
+*/
+.TNW {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-articles-description {
+
+
+
+}
+
+
+
 .aboveFooter {
 	height: 150px;
 	background-color: blue;
+	width: 100%;
 }
 
 .footer {
 	height: 75px;
 	background-color: black;
+	width: 100%;
 }
