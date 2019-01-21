@@ -24,17 +24,41 @@ nav {
 	height: 100px;*/
 
 	width : 100%;
-	padding : 5px 0;
+	height: 50px;
+	/*padding : 5px 0;*/
+	display: block;
+	/*display: flex;*/
 	background: grey
 }
 
+.menu1{
+	
+	float : left;
+	/*display : flex;*/
+	list-style-type: none
+	padding-left : 12px;
+}
+.menu2{
 
+	float : right;
+	/*display : flex;*/
+	margin-right : 30px;
+	list-style-type: none
+
+}
+.menu1 li, .menu2 li  {
+	display : inline-block;
+	padding-left : 15px;
+}
  	.main-articles {
+
 		background-color: yellow;
 	}
 	.big-article {
 		margin-top: 10px;
 		background-color: green;
+		background: url(tnw-Conf.jpg) no-repeat top left;
+		height: 400px
 	}
 	.small-article {
 		margin-top: 10px;
@@ -75,6 +99,11 @@ nav {
 	.category {
 		height: 600px
 	}
+
+   
+    }
+	
+
 /*------------------------setting for testing grid----------------------*/
 
 /*------------------------top section----------------------*/
@@ -204,10 +233,12 @@ nav {
 
 .list {
 	display: flex;
+
 	list-style: none;
 }
 
 .list li {
+	display: inline;
 	margin-left: 20px; 
 }
 /*
@@ -217,10 +248,10 @@ nav {
 	flex-direction: column;
 }
 */
-.TNW {
+/*.TNW {
 	display: flex;
 	justify-content: space-between;
-}
+}*/
 
 .main-articles-description {
 
