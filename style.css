@@ -4,11 +4,14 @@ body {
 	background-color: #fefefe;
 }
 
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
 
-
-.header {
+header {
 	width : 100%;
-	padding :1px 0;
+	padding :1px;
 	background: black;
 	/*width: 100%;
 	background-color: black;
@@ -18,38 +21,38 @@ body {
 .white {
 	color: white;
 }
+
+.orange {
+	color: orange;
+}
 /*------------------------setting for testing grid----------------------*/
 nav {
-	/*background-color: grey;
-	height: 100px;*/
+	background-color: grey;
+	height: 80px;
 
 	width : 100%;
 	height: 50px;
-	/*padding : 5px 0;*/
-	display: block;
-	/*display: flex;*/
+	display: flex;
+/*	padding : 40px;*/
 	background: grey
 }
-
+/*
 .menu1{
 	
 	float : left;
-	/*display : flex;*/
+	display : flex;
 	list-style-type: none
 	padding-left : 12px;
-}
+}*/
 .menu2{
-
-	float : right;
-	/*display : flex;*/
-	margin-right : 30px;
-	list-style-type: none
-
+position: absolute;
+right: 10px;
+list-style: none;
 }
-.menu1 li, .menu2 li  {
+/*.menu1 li, .menu2 li  {
 	display : inline-block;
 	padding-left : 15px;
-}
+}*/
  	.main-articles {
 
 		background-color: yellow;
@@ -65,7 +68,7 @@ nav {
 		background-color: red;
 	}
 
-	.height-450px {
+	.height-500px {
 		background-color: grey;
 		margin-top: 50px;
 	}
@@ -87,9 +90,8 @@ nav {
 		background-color: grey;
 	}
 
-	.categories-section {
-		/*margin-top: 50px; */
-		background-color: yellow;
+	.blue-background {
+		background-color: #101058; 
 	}
 
 	.red-background {
@@ -100,26 +102,18 @@ nav {
 		height: 600px
 	}
 
-   
-    }
 	
 
 /*------------------------setting for testing grid----------------------*/
 
 /*------------------------top section----------------------*/
 @media only screen and (min-width: 1024px) {
-	.container {
-	width: 90%;
-	margin: 0 auto;
-}
     .main-articles {
 		height: 450px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-		grid-row-gap: 1px;
-		grid-column-gap: 7px;
-		margin: 0 10px;
+		grid-gap: 5px;
 	}
 	.big-article {
 		grid-column: span 2;
@@ -133,14 +127,18 @@ nav {
 		
 	}
 
-	.height-450px {
-		height: 450px;
+	.hide-when-screen-big {
+		display: none
+	}
+
+	.height-500px {
+		height: 600px;
 		margin-top: 100px; 
 	}
 
 	.height-220px {
 		margin-top: 100px; 
-		height: 220px;
+		height: 300px;
 	}
 
 	.categories-section {
@@ -153,15 +151,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-	.hide-when-screen-medium {
-		display: none;
-	}
-	.container {
-		width: 90%;
-		margin: 0 auto;
-	}
-
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 	 .main-articles {
 		height: 500px;
 		display: grid;
@@ -183,7 +173,7 @@ nav {
 	}
     .height-220px {
 		margin-top: 50px; 
-		height: 220px;
+		height: 500px;
 	}
     .grid-auto-small {
 		display: grid;
@@ -195,8 +185,9 @@ nav {
 		margin-top: 50px; 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 5px;
+		
 	}
+
 
     /*  end zina's work */
 	}
@@ -226,6 +217,20 @@ nav {
 	.list {
 		font-size: 0.8em
 	}
+
+	.latest-article {
+		display: flex;
+		height: 100px;
+	}
+
+	.latest-article img{
+		width: 100px;
+		height: 100%;
+	}
+
+	/*.latest-article-description {
+		display: block;
+	}*/
 }
 
 
@@ -233,42 +238,35 @@ nav {
 
 .list {
 	display: flex;
-
 	list-style: none;
 }
 
 .list li {
-	display: inline;
 	margin-left: 20px; 
 }
-/*
+
 .big-article {
 	display: flex;
 	align-content: space-between;
 	flex-direction: column;
 }
-*/
-/*.TNW {
+
+.TNW {
 	display: flex;
 	justify-content: space-between;
-}*/
-
-.main-articles-description {
-
-
-
 }
+
+
+
 
 
 
 .aboveFooter {
 	height: 150px;
 	background-color: blue;
-	width: 100%;
 }
 
 .footer {
 	height: 75px;
 	background-color: black;
-	width: 100%;
 }
