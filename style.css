@@ -19,13 +19,13 @@ body {
 	color: white;
 }
 /*------------------------setting for testing grid----------------------*/
-.navBar {
+.nav-bar {
 	background-color: grey;
 	height: 100px;
 }
 
 
- 	.mainArticles {
+ 	.main-articles {
 		background-color: yellow;
 	}
 	.big-article {
@@ -72,7 +72,7 @@ body {
 
 /*------------------------top section----------------------*/
 @media only screen and (min-width: 1024px) {
-    .mainArticles {
+    .main-articles {
 		height: 450px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -111,7 +111,7 @@ body {
 
 
 @media only screen and (min-width: 768px) {
-	 .mainArticles {
+	 .main-articles {
 		height: 500px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
