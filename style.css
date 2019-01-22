@@ -13,10 +13,8 @@ header {
 	width : 100%;
 	padding :1px;
 	background: black;
-	/*width: 100%;
-	background-color: black;
-	height: 40px;*/
 }
+/*-------------------------------framework--------------------------------------*/
 
 .white {
 	color: white;
@@ -29,78 +27,35 @@ header {
 .grey {
 	color: #524d4d;
 }
-/*------------------------setting for testing grid----------------------*/
-nav {
-	background-color: grey;
-	height: 80px;
 
+
+.blue-background {
+	background-color: #010133; 
+}
+
+.orange-background {
+	background-color: #fff4f2; 
+}
+/*-------------------------------framework end--------------------------------------*/
+nav {
+	height: 80px;
 	width : 100%;
 	height: 50px;
 	display: flex;
-/*	padding : 40px;*/
-	background: grey
+	color: grey;
 }
-/*
-.menu1{
-	
-	float : left;
-	display : flex;
-	list-style-type: none
-	padding-left : 12px;
-}*/
+
 .menu2{
 position: absolute;
 right: 10px;
 list-style: none;
 }
-/*.menu1 li, .menu2 li  {
-	display : inline-block;
-	padding-left : 15px;
-}*/
 
 	.big-article {
-		/*margin-top: 10px;*/
-		background: url(tnw-Conf.jpg) no-repeat;
-		background-size: 100%;
-		/*height: 400px*/
-	}
-	.small-article {
-		margin-top: 10px;
+		/*background: url(tnw-Conf.jpg) no-repeat;
+		background-size: 100%;*/
 	}
 
-	.height-500px {
-		background-color: grey;
-		margin-top: 50px;
-	}
-
-	.border-black {
-		height: 200px;
-		border: 2px solid black;
-	}
-
-	.green-background {
-		background-color: green;
-	}
-
-	.black-background {
-		background-color: black
-	}
-
-	.grey-background {
-		background-color: grey;
-	}
-
-	.blue-background {
-		background-color: #010133; 
-	}
-
-	.orange-background {
-		background-color: #fff4f2; 
-	}
-
-	.red-background {
-		background-color: red;
-	}
 
 	.category {
 		height: 700px
@@ -118,6 +73,19 @@ list-style: none;
 		grid-template-rows: 1fr 1fr;
 		grid-gap: 5px;
 	}
+	..font-small{
+	font-size: 0.8em;
+}
+
+.font-big{
+	font-size: 3em;
+}
+
+.font-medium {
+	font-size: 1.5em;
+}
+
+
 	.big-article {
 		grid-column: span 2;
 		grid-row: span 2;
@@ -133,8 +101,6 @@ list-style: none;
 	.hide-when-screen-big {
 		display: none
 	}
-
-
 
 	.categories-section {
 		margin-top: 50px; 
@@ -158,22 +124,29 @@ list-style: none;
 		grid-template-rows: 1fr 1fr;
 		grid-gap: 5px;
 	}
+
+	.font-small{
+	font-size: 0.8em;
+}
+
+.font-big{
+	font-size: 3em;
+}
+
+.font-medium {
+	font-size: 1.5em;
+}
+
 	.big-article {
 		grid-column: span 2;
 		grid-row: span 2;
 	}
 
-	
+	.hide-when-screen-medium {
+		display: none;
+	}
 
-	/*  zina's work */
-/*	.height-500px {
-		width : 100%;
-		
-	}*/
-/*    .height-220px {
-		margin-top: 50px; 
-		height: 500px;
-	}*/
+	
     .grid-auto-small {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -209,6 +182,10 @@ list-style: none;
 	.top-article {
 		height: 200px;
 	}
+
+/*	.make-smaller {
+		font-size: 0.5em;
+	}*/
 
 	.latest-news {
 		height: 90px;
@@ -269,10 +246,10 @@ list-style: none;
 	flex-direction: column;
 }
 
-.TNW {
+/*.TNW {
 	display: flex;
 	justify-content: space-between;
-}
+}*/
 
 .category {
 	display: grid;
@@ -290,6 +267,11 @@ list-style: none;
 
 .article-description p{
 	color: grey
+}
+
+.latest-article .font-medium:hover {
+	color: orange;
+	cursor: pointer;
 }
 
 
@@ -352,3 +334,4 @@ footer {
 	padding : 20px;
 	background-color: black;
 }
+
