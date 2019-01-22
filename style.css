@@ -28,13 +28,22 @@ header {
 	color: #524d4d;
 }
 
+.hover-black :hover{
+	color: black;
+	cursor: pointer;
+}
+
 
 .blue-background {
 	background-color: #010133; 
 }
 
 .orange-background {
-	background-color: #fff4f2; 
+	background-color: #feeae7; 
+}
+
+.orange-background-2{
+	background-color: #f42; 
 }
 /*-------------------------------framework end--------------------------------------*/
 nav {
@@ -109,9 +118,15 @@ list-style: none;
 		grid-gap: 5px;
 	}
 
+/*	.latest-article {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		height: 400px;
+	}*/
+
 	.latest-article img{
-		max-width: 100%;
-		height: auto;
+		width: 100%;
+		max-height: 200px;
 	}
     .icon-menu ul li{
 			
@@ -187,8 +202,8 @@ list-style: none;
 	}
 
 	.latest-article img{
-		max-width: 100%;
-		height: auto;
+		width: 100%;
+		max-height: 200px;
 	}
 
     
@@ -303,10 +318,11 @@ list-style: none;
 	justify-content: space-between;
 }*/
 
-.category {
+/*.category {
 	display: grid;
-	grid-template-rows: 1fr 5fr 2fr 5fr
-}
+	grid-template-rows: 1fr 1fr 5fr 2fr 5fr
+}*/
+
 
 .category h4{
 	font-size: 2em;
@@ -323,7 +339,7 @@ list-style: none;
 }
 
 .latest-article .font-medium:hover {
-	color: orange;
+	color: #f42;
 	cursor: pointer;
 }
 
